@@ -13,8 +13,8 @@ function countDown ( ) {
 
   let finalDias = Math.floor(segTotal / 60 / 60 / 24);
   let finalHoras = Math.floor(segTotal / 60 / 60) % 24;
-  let finalSegundos = Math.floor(segTotal / 60) % 60;
-  let finalMinutos = Math.floor(segTotal) % 60;
+  let finalMinutos = Math.floor(segTotal / 60) % 60;
+  let finalSegundos = Math.floor(segTotal) % 60;
 
   dia.innerHTML = finalDias
   hora.innerHTML = formatoTempo(finalHoras)
